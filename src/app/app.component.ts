@@ -26,7 +26,7 @@ export class AppComponent implements OnInit, OnDestroy {
   
   ngOnInit(): void {
     this.IntervalId = setInterval(() => {
-      this.storageService.addProgress(this.incrementBy)
+      this.storageService.updateProgress(this.incrementBy)
 
       if(this.progressValue() >= 100){
         clearInterval(this.IntervalId)

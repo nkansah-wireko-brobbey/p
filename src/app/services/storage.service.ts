@@ -9,7 +9,7 @@ export class StorageService {
 
   constructor() { }
 
-  addProgress(increaseBy: number){
+  updateProgress(increaseBy: number){
     this.progress.update((prev)=>prev+increaseBy)
   }
 
